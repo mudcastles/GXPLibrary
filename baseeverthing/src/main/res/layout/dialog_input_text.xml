@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/rl_outside_view"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical">
+
+    <LinearLayout
+            android:id="@+id/rl_inputdlg_view"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="@color/text_short_gray"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingStart="10.0dip"
+            android:paddingEnd="0.0dip">
+
+        <EditText
+                android:id="@+id/et_input_message"
+                android:layout_width="0.0dip"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10.0dip"
+                android:layout_marginBottom="10.0dip"
+                android:layout_weight="1.0"
+                android:background="@drawable/bg_span_white"
+                android:imeActionId="@+id/login"
+                android:imeOptions="actionUnspecified|normal"
+                android:inputType="text"
+                android:maxLines="1"
+                android:paddingStart="10.0dip"
+                android:paddingTop="5.0dip"
+                android:paddingEnd="10.0dip"
+                android:paddingBottom="5.0dip"
+                android:singleLine="true"
+                android:textColor="@android:color/black" />
+
+        <View
+                android:layout_width="0.5dip"
+                android:layout_height="fill_parent"
+                android:layout_marginTop="10.0dip"
+                android:layout_marginBottom="10.0dip"
+                android:background="@color/colorTransparentBlack" />
+
+        <ImageView
+                android:id="@+id/confirm_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingStart="10.0dip"
+                android:paddingEnd="10.0dip"
+                android:src="@drawable/ico_fs02" />
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--    toolbar中title的文字样式 -->
+    <style name="com_peng_baseeverthing_styles_toolbar_title_appearance">
+        <item name="android:textColor">@android:color/black</item>
+    </style>
+
+    <!--    toolbar中popup的样式 -->
+    <style name="com_peng_baseeverthing_styles_toolBar_pop_item" parent="Base.Theme.AppCompat.Light">
+        <item name="android:textColor">@color/colorAccent</item>
+    </style>
+
+    <!--    SwipeBackLayout的阴影样式 -->
+    <style name="SwipeBackLayout">
+        <item name="edge_size">50dip</item>
+        <item name="shadow_left">@drawable/shadow_left</item>
+        <item name="shadow_right">@drawable/shadow_right</item>
+        <item name="shadow_bottom">@drawable/shadow_bottom</item>
+    </style>
+</resources>

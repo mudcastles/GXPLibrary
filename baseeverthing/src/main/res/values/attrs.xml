@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <attr name="SwipeBackLayoutStyle" format="reference" />
+    <declare-styleable name="SwipeBackLayout">
+        <attr name="edge_size" format="dimension" />
+        <attr name="edge_flag">
+            <enum name="left" value="0" />
+            <enum name="right" value="1" />
+            <enum name="bottom" value="2" />
+            <enum name="all" value="3" />
+        </attr>
+        <attr name="shadow_left" format="reference" />
+        <attr name="shadow_right" format="reference" />
+        <attr name="shadow_bottom" format="reference" />
+    </declare-styleable>
+
+    <declare-styleable name="CenterTextToolBar">
+        <attr name="text_center" format="boolean" />
+    </declare-styleable>
+
+
+    <declare-styleable name="AdjustImageView">
+        <attr name="adjust_for" format="enum">
+            <enum name="WIDTH" value="0" />
+            <enum name="HEIGHT" value="1" />
+        </attr>
+    </declare-styleable>
+
+    <declare-styleable name="SubjectOptionLayout">
+        <attr name="maxSelectNum" format="integer" />
+        <attr name="optionMargin" format="dimension" />
+        <attr name="textSize" format="dimension" />
+        <attr name="drawableSize" format="dimension" />
+    </declare-styleable>
+
+    <declare-styleable name="HorizontalBarChart">
+        <attr name="itemSpace" format="dimension" />
+        <attr name="textDrawableSpace" format="dimension" />
+        <attr name="valueDrawableSpace" format="dimension" />
+        <attr name="charTextSize" format="dimension" />
+        <attr name="valueTextSize" format="dimension" />
+        <attr name="itemDrawable" format="color|reference" />
+        <attr name="textColor" format="color|reference" />
+        <attr name="valueColor" format="color|reference" />
+    </declare-styleable>
+
+    <declare-styleable name="MaxHeightRecyclerView">
+        <attr name="maxHeight" format="dimension" />
+    </declare-styleable>
+
+    <declare-styleable name="SVGPathView">
+        <!-- 指向保存path数据的string -->
+        <attr name="svg_start_path" format="reference" />
+        <attr name="svg_end_path" format="reference" />
+        <attr name="svg_paint_width" format="integer" />
+        <attr name="svg_view_width" format="integer" />
+        <attr name="svg_view_height" format="integer" />
+        <attr name="svg_color" format="color" />
+    </declare-styleable>
+</resources>

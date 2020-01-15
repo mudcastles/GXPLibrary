@@ -1,0 +1,2 @@
+include ':app', ':baseeverthing', ':common-anim-lib', ':imagecompresslibrary'
+rootProject.name='GXPLibrary'

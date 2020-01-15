@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+<!--
+
+menu item可以设置title来显示文本
+icon来显示图标
+showAsAction有三个可能的值：always、ifRoom以及never。
+    always:总是展示在标题栏上；
+    ifRoom如果标题栏上有位置就展示出来；
+    never：永不展示标题栏。
+orderInCategory表示优先级，值越大优先级越低，如果标题栏空间不足，会将优先级低的放到overflow里面去
+-->
+    <item
+        android:id="@+id/action_settings"
+        android:orderInCategory="100"
+        android:title="测试1"
+        app:showAsAction="always"/>
+    <item
+        android:id="@+id/action_share"
+        android:orderInCategory="100"
+        android:title="测试2"
+        app:showAsAction="ifRoom"/>
+    <item
+        android:id="@+id/action_search"
+        android:orderInCategory="100"
+        android:title="设置"
+        app:showAsAction="never"/>
+    <item
+        android:id="@+id/action_search2"
+        android:orderInCategory="100"
+        android:title="关于"
+        app:showAsAction="never"/>
+</menu>

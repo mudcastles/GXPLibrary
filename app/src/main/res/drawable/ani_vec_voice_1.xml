@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animated-vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:drawable="@drawable/ic_voice_1">
+
+    <target
+        android:name="voice_1_5"
+        android:animation="@animator/ani_voice_1_path_5" />
+    <target
+        android:name="voice_1_1"
+        android:animation="@animator/ani_voice_1_path_1" />
+
+    <target
+        android:name="voice_1_2"
+        android:animation="@animator/ani_voice_1_path_2" />
+
+    <target
+        android:name="voice_1_3"
+        android:animation="@animator/ani_voice_1_path_3" />
+    <target
+        android:name="voice_1_4"
+        android:animation="@animator/ani_voice_1_path_4" />
+    <target
+        android:name="voice_1_5"
+        android:animation="@animator/ani_voice_1_path_5" />
+
+
+</animated-vector>

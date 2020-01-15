@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animated-selector xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aapt="http://schemas.android.com/aapt">
+    <item
+        android:id="@+id/state_off"
+        android:drawable="@drawable/ic_pause_1"
+        android:state_checked="true">
+    </item>
+    <item
+        android:id="@+id/state_on"
+        android:drawable="@drawable/ic_play_1">
+    </item>
+
+    <transition
+        android:fromId="@id/state_off"
+        android:toId="@id/state_on">
+        <aapt:attr name="android:drawable">
+            <animated-vector android:drawable="@drawable/ic_pause_1">
+                <target android:name="group">
+                    <aapt:attr name="android:animation">
+                        <objectAnimator
+                            android:duration="300"
+                            android:propertyName="rotation"
+                            android:valueFrom="-90"
+                            android:valueTo="0"
+                            android:valueType="floatType" />
+                    </aapt:attr>
+                </target>
+
+                <target android:name="path">
+                    <aapt:attr name="android:animation">
+                        <objectAnimator
+                            android:duration="300"
+                            android:propertyName="pathData"
+                            android:valueFrom="M33,35 v4 h33 v-4z M33,65 v-4 h33 v4z"
+                            android:valueTo="M33,30.95 v19.05 h33 v0z M33,69.05 v-19.05 h33 v0z"
+                            android:valueType="pathType" />
+                    </aapt:attr>
+                </target>
+            </animated-vector>
+        </aapt:attr>
+    </transition>
+
+    <transition
+        android:fromId="@id/state_on"
+        android:toId="@id/state_off">
+        <aapt:attr name="android:drawable">
+            <animated-vector android:drawable="@drawable/ic_play_1">
+                <target android:name="group">
+                    <aapt:attr name="android:animation">
+                        <objectAnimator
+                            android:duration="300"
+                            android:propertyName="rotation"
+                            android:valueFrom="0"
+                            android:valueTo="-90"
+                            android:valueType="floatType" />
+                    </aapt:attr>
+                </target>
+
+                <target android:name="path">
+                    <aapt:attr name="android:animation">
+                        <objectAnimator
+                            android:duration="300"
+                            android:propertyName="pathData"
+                            android:valueFrom="M33,30.95 v19.05 h33 v0z M33,69.05 v-19.05 h33 v0z"
+                            android:valueTo="M33,35 v4 h33 v-4z M33,65 v-4 h33 v4z"
+                            android:valueType="pathType" />
+                    </aapt:attr>
+                </target>
+            </animated-vector>
+        </aapt:attr>
+    </transition>
+
+
+
+
+
+</animated-selector>
