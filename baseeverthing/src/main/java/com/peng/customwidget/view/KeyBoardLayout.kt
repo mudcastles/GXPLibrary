@@ -19,7 +19,7 @@ import kotlin.math.max
 /**
  * 键盘，包含了AnimatorButton，实现切换过程的动画
  */
-class KayBoardLayout : ViewGroup, AnimatorButton.OnExpandListener,
+class KeyBoardLayout : ViewGroup, AnimatorButton.OnExpandListener,
     AnimatorButton.OnButtonClickedListener, View.OnClickListener {
     private val mInflater = LayoutInflater.from(context)
     private var mKeyBoard: View = mInflater.inflate(R.layout.layout_keyboard, null)
