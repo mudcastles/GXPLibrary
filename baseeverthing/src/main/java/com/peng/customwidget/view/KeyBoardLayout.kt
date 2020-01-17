@@ -143,7 +143,6 @@ class KayBoardLayout : ViewGroup, AnimatorButton.OnExpandListener,
     fun toggle() = mButton.toggle()
 
     override fun onMeasure(widthMeasureSpec: Int, heightMeasureSpec: Int) {
-//        super.onMeasure(widthMeasureSpec, heightMeasureSpec)
         if (mButton.getStatus() == AnimatorButton.AnimatorStatus.FOLDED) {
             mWidthMeasureSpec = MeasureSpec.makeMeasureSpec(0, MeasureSpec.UNSPECIFIED)
             mHeightMeasureSpec = MeasureSpec.makeMeasureSpec(0, MeasureSpec.UNSPECIFIED)

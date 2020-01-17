@@ -108,7 +108,7 @@ class AnimatorButton : View {
         items.forEach {
             mButtonItems.add(it)
         }
-        neddRecalMaxSize
+        neddRecalMaxSize = true
         invalidate()
     }
 
@@ -195,6 +195,9 @@ class AnimatorButton : View {
         }
     }
 
+    /**
+     * 计算按钮文字的最大宽高
+     */
     private fun calMaxWidthHeight() {
         //计算过一次后就不再计算了
         if (!neddRecalMaxSize) {
@@ -387,9 +390,12 @@ class AnimatorButton : View {
     }
 
 
+    /**
+     * @param drawableColor 图标、文字的颜色
+     */
     class ButtonItem(var drawable: Drawable, var text: String, @ColorInt var drawableColor: Int) {
-        var contentWidth = 0
-        var contentHeight = 0
+        var contentWidth = 0    //图标、文字的总宽度
+        var contentHeight = 0   //图标、文字的最大高度
     }
 
     enum class AnimatorStatus {
